@@ -1,0 +1,34 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# Secrets
+.env
+.env.*
+!.env.sample
+credentials.json
+*-service-account*.json
+
+# WhatsApp Web linked-device session (LocalAuth)
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Runtime state and logs
+data/sync_state.json
+data/sync_state.json.tmp
+data/*.log
+
+# Tooling
+coverage/
+logs/
+*.log
+npm-debug.log*
+
+# OS and editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+*.swp

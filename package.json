@@ -1,0 +1,34 @@
+{
+  "name": "wa-duty-sync",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "test": "vitest run",
+    "list-groups": "tsx scripts/list-groups.ts",
+    "setup-sheet": "tsx scripts/setup-sheet.ts",
+    "check": "tsx scripts/check.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.30.0",
+    "async-mutex": "^0.5.0",
+    "dotenv": "^18.0.8",
+    "googleapis": "^187.0.0",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "github:wwebjs/whatsapp-web.js#58ddf1561cd783d6a548fa812eb70a05944604b4",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/qrcode-terminal": "^0.12.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}
